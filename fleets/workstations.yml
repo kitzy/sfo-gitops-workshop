@@ -70,10 +70,14 @@ controls:
       - path: ../platforms/macos/configuration-profiles/disable-bluetooth-file-sharing.mobileconfig
         labels_include_all:
           - Department - Engineering
+      - path: ../platforms/macos/configuration-profiles/pascode-settings.json
+        labels_include_any:
+          - C-Suite
 
   windows_settings:
     configuration_profiles:
       - paths: ../platforms/windows/configuration-profiles/*.xml
+
 
   ###########################################################
   # Managed disk encryption
@@ -84,7 +88,8 @@ controls:
   # Read more here:
   #   • https://fleetdm.com/guides/enforce-disk-encryption
   ###########################################################
-  # enable_disk_encryption: true
+  enable_disk_encryption: true
+  enable_recovery_lock_password: true
 
   # ##########################################################
   # Managed OS updates
