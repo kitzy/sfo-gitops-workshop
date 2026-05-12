@@ -130,3 +130,7 @@ controls:
 ###########################################################
 labels:
   - paths: ./labels/*.yml
+  - name: C-Suite
+    description: Hosts belonging to members of the C-suite
+    label_membership_type: manual
+    hosts:
