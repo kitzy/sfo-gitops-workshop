@@ -13,26 +13,16 @@
 
 org_settings:
   org_info:
-    ###########################################################
-    # The name of your organization is displayed to end users
-    # during the setup experience for new hardware, and to admins
-    # in the Fleet UI.
-    #
-    # Read more:
-    #   • https://fleetdm.com/docs/configuration/yaml-files#org-info
-    ###########################################################
     org_name: Kitzy
-
   server_settings:
-    ###########################################################
-    # The server URL where Fleet is running.
-    #
-    # Note: This is configured as a repository "secret" just so
-    # that it can be more easily used in the CI/CD workflow
-    # configurations.
-    ###########################################################
     server_url: $FLEET_URL
-
+  fleet_desktop:
+    transparency_url: https://catoftheday.com
+  host_expiry_settings:
+    # By default, Fleet will automatically delete hosts that have not been seen in 90 days.
+    # You can change this to a different number of days, or set it to `0` to disable host expiry.
+    host_expiry_enabled: true
+    host_expiry_window: 30  
   ###########################################################
   # Uncomment to use single sign-on (SSO) for admins accessing Fleet.
   #
