@@ -70,9 +70,9 @@ controls:
       - path: ../platforms/macos/configuration-profiles/disable-bluetooth-file-sharing.mobileconfig
         labels_include_all:
           - Department - Engineering
-      - path: ../platforms/macos/configuration-profiles/passcode-settings.json
-        labels_include_any:
-          - C-Suite
+      # - path: ../platforms/macos/configuration-profiles/passcode-settings.json
+      #   labels_include_any:
+      #     - C-Suite
 
   windows_settings:
     configuration_profiles:
@@ -201,7 +201,7 @@ software:
   app_store_apps: # Apps to install via VPP from the macOS App Store, if any
     # …
 labels:
-  - name: C-Suite
+  - name: C Suite
     description: Hosts belonging to members of the C-suite
     label_membership_type: manual
     hosts:
