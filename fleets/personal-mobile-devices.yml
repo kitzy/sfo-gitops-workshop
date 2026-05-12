@@ -107,8 +107,4 @@ software:
     #   display_name: "Slack"
     #   self_service: true
     #   setup_experience: true
-labels:
-  - name: C-Suite
-    description: Hosts belonging to members of the C-suite
-    label_membership_type: manual
-    hosts:
+# labels:
