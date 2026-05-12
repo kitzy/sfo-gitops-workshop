@@ -205,3 +205,9 @@ labels:
     description: Hosts belonging to members of the C-suite
     label_membership_type: manual
     hosts:
+settings:
+  webhook_settings:
+    failing_policies_webhook:
+      enable_failing_policies_webhook: true
+      destination_url: https://webhook.site/#!/view/e7c7ed76-98fe-490a-a9aa-f2f478333fb8/31f69b47-b5cf-41e0-8e66-4a956376049f/1
+      host_batch_size: 0
