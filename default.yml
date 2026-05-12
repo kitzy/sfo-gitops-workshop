@@ -24,7 +24,7 @@ org_settings:
     host_expiry_enabled: true
     host_expiry_window: 30
   webhook_settings:
-    activities_webook:
+    activities_webhook:
       enable_activities_webhook: true
       destination_url: https://your-custom-webhook.example.com/webhooks/receive-from-fleet
   ###########################################################
