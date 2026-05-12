@@ -13,7 +13,7 @@
 
 org_settings:
   org_info:
-    org_name: Kitzy
+    org_name: CHOAM
   server_settings:
     server_url: $FLEET_URL
   fleet_desktop:
@@ -22,7 +22,11 @@ org_settings:
     # By default, Fleet will automatically delete hosts that have not been seen in 90 days.
     # You can change this to a different number of days, or set it to `0` to disable host expiry.
     host_expiry_enabled: true
-    host_expiry_window: 30  
+    host_expiry_window: 30
+  webhook_settings:
+    activities_webook:
+      enable_activities_webhook: true
+      destination_url: https://your-custom-webhook.example.com/webhooks/receive-from-fleet
   ###########################################################
   # Uncomment to use single sign-on (SSO) for admins accessing Fleet.
   #
