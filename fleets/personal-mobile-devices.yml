@@ -75,6 +75,9 @@ software:
   packages: # Custom packages (if any)
     - path: ../platforms/windows/software/cloudflare-warp.yml
       self_service: false
+  fleet_maintained_apps:
+    - slug: aws-vpn-client/darwin
+      self-service: true
 
   app_store_apps:
     ###########################################################
