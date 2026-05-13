@@ -77,7 +77,7 @@ software:
       self_service: false
   fleet_maintained_apps:
     - slug: aws-vpn-client/darwin
-      self-service: true
+      self_service: true
 
   app_store_apps:
     ###########################################################
